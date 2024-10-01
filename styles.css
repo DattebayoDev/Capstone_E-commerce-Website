@@ -1,0 +1,12 @@
+.main-img img{
+    height: auto;
+    width: 300px;
+    object-fit: contain
+}
+.nav-item {
+    margin-left: 10px;
+}
+
+.nav-item a {
+    font-size: 30px;
+}
