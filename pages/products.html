@@ -11,23 +11,39 @@
     />
     <title>Products Page</title>
     <style>
-      img {
-        width: 200px;
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div .card-img {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+      }
+      .img-container {
+        height: 60%;
+      }
+      .card {
+        height: 500px;
+        width: 100%;
       }
 
-      .card {
-        width: 400px;
+      .card-text {
+        margin-top: 20px;
       }
     </style>
   </head>
   <body>
     <header></header>
     <main>
-      <div class="grid">
+      <div class="grid p-5">
         <div class="row">
-          <div class="col-sm-6 md-4">
-            <div class="card">
-              <img class="card-img" src="../assets/dog_food.jpg" alt="" />
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog_food.jpg" alt="" />
+              </div>
               <div class="card-text">
                 <h5>Dog Food</h5>
                 <p>
@@ -38,9 +54,11 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 md-4">
-            <div class="card">
-              <img class="card-img" src="../assets/dog_collar.jpg" alt="" />
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog_collar.jpg" alt="" />
+              </div>
               <div class="card-text">
                 <h5>Collar</h5>
                 <p>
@@ -51,9 +69,11 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 md-4">
-            <div class="card">
-              <img class="card-img" src="../assets/dog_toy.jpg" alt="" />
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog_toy.jpg" alt="" />
+              </div>
               <div class="card-text">
                 <h5>Toy</h5>
                 <p>
@@ -65,11 +85,13 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-6 md-6">
-            <div class="card">
-              <img src="../assets/dog_cage.jpg" alt="" />
-              <div>
+        <div class="row mt-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog_cage.jpg" alt="" />
+              </div>
+              <div class="card-text">
                 <h5>Cage</h5>
                 <p>
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
@@ -79,10 +101,12 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 md-6">
-            <div class="card">
-              <img src="../assets/dog_bowl.jpg" alt="" />
-              <div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog_bowl.jpg" alt="" />
+              </div>
+              <div class="card-text">
                 <h5>Bowls</h5>
                 <p>
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
@@ -92,10 +116,12 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 md-6">
-            <div class="card">
-              <img src="../assets/dog _health.jpg" alt="" />
-              <div>
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
+              <div class="img-container">
+                <img class="card-img" src="../assets/dog _health.jpg" alt="" />
+              </div>
+              <div class="card-text">
                 <h5>Health product</h5>
                 <p>
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
