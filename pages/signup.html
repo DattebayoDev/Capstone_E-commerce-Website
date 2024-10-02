@@ -9,9 +9,9 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../login.css" />
+    <link rel="stylesheet" href="../styles.css" />
 
-    <title>Login Page</title>
+    <title>Registration Page</title>
   </head>
   <body style="background-color: #29bdc1">
     <header>
@@ -43,7 +43,7 @@
           "
         >
           <div class="mt-2 text-center">
-            <p>Log In</p>
+            <p>Sign Up</p>
           </div>
           <div class="form-group text-center my-2">
             <!-- <label for="username"> Username </label> -->
@@ -51,7 +51,7 @@
               class="form-control w-50 w-md-40 w-lg-50 mx-auto text-center"
               id="username"
               type="text"
-              placeholder="username"
+              placeholder="Username"
               required
             />
           </div>
@@ -59,33 +59,44 @@
             <!-- <label for="password"> Password </label> -->
             <input
               class="form-control w-50 w-md-40 w-lg-50 mx-auto text-center"
-              id="username"
+              id="password"
               type="text"
-              placeholder="password"
+              placeholder="Password"
               required
             />
           </div>
           <div class="form-group text-center my-2">
-            <label class="form-check-label" id="remeberMe"> Remeber me </label>
+            <!-- <label for="password"> Password </label> -->
             <input
-              class="form-check-input"
-              id="remeberMe"
-              type="checkbox"
-              value=""
+              class="form-control w-50 w-md-40 w-lg-50 mx-auto text-center"
+              id="confirm_pw"
+              type="text"
+              placeholder="Confirm Password"
               required
             />
           </div>
           <div class="text-center mb-2">
             <button class="btn btn-primary w-50 mx-auto" type="submit">
-              Login
+              Sign Up
             </button>
           </div>
-          <div class="text-center mb-1 ">
+          <div class="text-center mb-1">
             <small class="form-text"
-              >Don't have an account?
-              <a href="../pages/signup.html"> Sign up</a>
+              >Already have an account?
+              <a href="../pages/login.html"> Login in</a>
             </small>
           </div>
+          <fieldset>
+            <legend>How did you hear about Us ?</legend>
+            <div>
+              <input type="radio" value="friends" />
+              <label for="friends"> Friends </label>
+            </div>
+            <div>
+              <input type="radio" value="online" />
+              <label for="online"> Online</label>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>

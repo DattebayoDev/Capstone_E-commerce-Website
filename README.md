@@ -25,6 +25,9 @@ When your git push does not work because of this error
 ! [rejected]        main -> main (non-fast-forward)
 fatal: refusing to merge unrelated histories
 
+git pull origin <branch-name> --allow-unrelated-histories
+solution is to merge unrelated histories 
+
 ## Useful emmett shorcuts 
 (div.className>label+input)*5
 To create 5 <div> elements, each containing a <label> and an <input>, all with similar class names
@@ -37,6 +40,13 @@ Solution:  ../ means "go up one folder," so you're moving up from the pages fold
 ### Questions
 
 Why should I use an a tag with btn class rather than a btn with a hyperlink attached to it ? 
+
+w-40 causing overflow but not w-50? 
+
+should i use fieldset or div to wrap my content in this code. <fieldset>
+
+
+
 
 
 ## New Information
