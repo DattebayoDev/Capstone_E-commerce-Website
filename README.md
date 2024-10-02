@@ -21,6 +21,9 @@ If you wish to set tracking information for this branch you can do so with:
 ```
 so i just cloned it
 
+When your git push does not work because of this error
+! [rejected]        main -> main (non-fast-forward)
+fatal: refusing to merge unrelated histories
 
 ## Useful emmett shorcuts 
 (div.className>label+input)*5
