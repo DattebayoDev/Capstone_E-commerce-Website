@@ -45,8 +45,15 @@ w-40 causing overflow but not w-50?
 
 should i use fieldset or div to wrap my content in this code. <fieldset>
 
+Why does this code create overflow of the background color          
+ <div class="form-group text-center my-2"  style="background: lightblue; padding-right:135px;">
+answer: In simpler terms, if the width of the element plus 135px of right padding exceeds the available width of the viewport or the container, the element will overflow and cause horizontal scrolling.
 
+why is my padding not working               
+class="form-group text-center pr-5"
+To use the pr-5 class effectively, you need to ensure that the element you're applying it to is within a container that has a fixed width or is part of a Bootstrap grid layout.
 
+answer: Padding on Block-Level vs Inline Elements: Padding works better on block-level elements (like div), but the content inside .form-group (the radio button and label) are inline elements. Inline elements don't respect padding the same way block-level elements do, so it might not be obvious.
 
 
 ## New Information

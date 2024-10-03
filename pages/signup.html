@@ -15,7 +15,7 @@
   </head>
   <body style="background-color: #29bdc1">
     <header>
-      <ul class="nav" style="background-color: whitesmoke">
+      <ul class="nav d-flex justify-content-center" style="background-color: whitesmoke">
         <li class="nav-item">
           <a class="nav-link" href="../index.html"> Home </a>
         </li>
@@ -31,7 +31,7 @@
       </ul>
     </header>
     <main>
-      <div class="d-flex mt-4">
+      <div class="d-flex mt-5">
         <form
           class="w-75 mx-auto"
           id="form"
@@ -80,23 +80,29 @@
               Sign Up
             </button>
           </div>
-          <div class="text-center mb-1">
-            <small class="form-text"
-              >Already have an account?
-              <a href="../pages/login.html"> Login in</a>
-            </small>
-          </div>
-          <fieldset>
-            <legend>How did you hear about Us ?</legend>
-            <div>
-              <input type="radio" value="friends" />
-              <label for="friends"> Friends </label>
+
+          <fieldset style="padding-left: 25%; margin-bottom: 5px;">
+            <p class="mb-1">How did you hear about Us ?</p>
+            <div class="form-group">
+              <input type="radio" value="Friends" />
+              <label for="Friends">Friends</label>
             </div>
-            <div>
-              <input type="radio" value="online" />
-              <label for="online"> Online</label>
+            <div class="form-group">
+              <input type="radio" value="socialMedia" />
+              <label for="socialMedia">Social Media</label>
+            </div>
+            <div class="form-group">
+              <input type="radio" value="News" />
+              <label for="News">News</label>
             </div>
           </fieldset>
+
+          <div class="text-center mb-2">
+            <small class="form-text"
+              >Already have an account?
+              <a href="../pages/login.html"> Log in</a>
+            </small>
+          </div>
         </form>
       </div>
     </main>
