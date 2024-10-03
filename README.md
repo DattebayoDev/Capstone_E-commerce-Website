@@ -55,6 +55,16 @@ To use the pr-5 class effectively, you need to ensure that the element you're ap
 
 answer: Padding on Block-Level vs Inline Elements: Padding works better on block-level elements (like div), but the content inside .form-group (the radio button and label) are inline elements. Inline elements don't respect padding the same way block-level elements do, so it might not be obvious.
 
+I am not able to put two form inputs next to each other and i dont know what is causing the issue?
+bruh, i just had to take out the form out of the form-row
+
+why does form-check-input make it inline but not form-check, what is the difference between form-check-input and label
+
+When you use the w-50 class, Bootstrap directly sets the width to 50%. However, for other percentages, like 80%, you don't have a predefined Bootstrap class to handle that, so you need to use inline styles or a custom class.
+
+use ps intsead of pl-5 for bootstrap 5
+
+My form inputs were overflowing so i did form-control-small ang changed their col width
 
 ## New Information
 
