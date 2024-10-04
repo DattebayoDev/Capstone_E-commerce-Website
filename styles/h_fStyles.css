@@ -11,23 +11,46 @@
     font-family: "ai"; /* Replace with your desired font name */
     src: url("../fonts/ai.otf") format("opentype");
   }
-  body {
+
+  html, body {
+    height:  100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     font-family: arial;
+
   }
 
-  header img {
+  main {
+    flex: 1
+  }
+
+  footer {
+    margin-top: 40px;
+  }
+  
+  #socialsLogo img {
     height: 20px;
     width: 20px;
-    margin: 3px;
+    margin: 5px;
   }
+
   #intro_text {
     font-size: 20px;
   }
+
   #logo {
     height: 100px;
-    width: 50%;
-    object-fit: cover;
+    width: 100px;
+    margin: 0 auto
   }
+
+  #logo img {
+    height: 100%;
+    width: auto;
+    object-fit: cover ;
+  }
+
 
   #center_img {
     height: auto;
@@ -40,9 +63,10 @@
     color: white;
     font-family: "ph";
   }
+
   footer p {
     color: #404040;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: bold;
     margin: 2px;
   }

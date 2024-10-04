@@ -9,38 +9,12 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../styles/h_fStyles.css" />
+    <title>Home</title>
     <style>
-      @font-face {
-        font-family: "fonty"; /* Replace with your desired font name */
-        src: url("../fonts/fonty.txt") format("text");
-      }
-      @font-face {
-        font-family: "ph"; /* Replace with your desired font name */
-        src: url("../fonts/ph1.otf") format("opentype");
-      }
-
-      @font-face {
-        font-family: "ai"; /* Replace with your desired font name */
-        src: url("../fonts/ai.otf") format("opentype");
-      }
-      body {
-        font-family: arial;
-      }
-
-      header img {
-        height: 20px;
-        width: 20px;
-        margin: 3px;
-      }
       #intro_text {
         font-size: 20px;
-      }
-      #logo {
-        height: 100px;
-        width: 50%;
-        object-fit: cover;
       }
 
       #center_img {
@@ -54,17 +28,9 @@
         color: white;
         font-family: "ph";
       }
-      footer p {
-        color: #404040;
-        font-size: 10px;
-        font-weight: bold;
-        margin: 2px;
-      }
 
-      footer img {
-        height: 15px;
-        width: 15px;
-        margin-right: 3px;
+      footer {
+        margin: 0;
       }
     </style>
   </head>
@@ -75,13 +41,8 @@
         <div class="col-11">
           <div class="d-flex flex-column text-center">
             <div class="w-50" style="margin-left: 30%">
-              <div class="pt-2">
-                <img
-                  id="logo"
-                  class="img mx-auto"
-                  src="../assets/main_logo.jpg"
-                  alt=""
-                />
+              <div id="logo" class="img-container">
+                <img src="../assets/main_logo.jpg" alt="" />
               </div>
               <h3 class="text m-0" style="font-family: ai; color: #6fd6f3">
                 The Pawesome Place
@@ -96,7 +57,7 @@
           </div>
         </div>
         <div class="col-1 mt-4">
-          <div class="d-flex flex-column">
+          <div id="socialsLogo" class="d-flex flex-column">
             <img src="../assets/facebook.png" alt="" />
             <img src="../assets/instagram.png" alt="" />
             <img src="../assets/tiktok.png " alt="" />
@@ -165,11 +126,7 @@
               <h4 id="intro" class="text-center mt-4">
                 We have everything your pet needs
               </h4>
-              <p
-                id="intro_text"
-                class="text-center p-2"
-              
-              >
+              <p id="intro_text" class="text-center p-2">
                 Welcome to our furry little paradise! We’re a one-stop shop for
                 all your pet’s needs, from toys and treats to cozy beds and
                 stylish accessories. Our friendly staff is always on hand to

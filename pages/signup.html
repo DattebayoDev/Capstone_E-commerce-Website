@@ -14,7 +14,6 @@
       ul {
         justify-content: space-evenly;
       }
-      
     </style>
     <title>Registration Page</title>
   </head>
@@ -24,13 +23,8 @@
         <div class="col-11">
           <div class="d-flex flex-column text-center">
             <div class="w-50" style="margin-left: 30%">
-              <div class="pt-2">
-                <img
-                  id="logo"
-                  class="img mx-auto"
-                  src="../assets/main_logo.jpg"
-                  alt=""
-                />
+              <div id="logo" class="img-container">
+                <img src="../assets/main_logo.jpg" alt="" />
               </div>
               <h3 class="text m-0" style="font-family: ai; color: #6fd6f3">
                 The Pawesome Place
@@ -45,7 +39,7 @@
           </div>
         </div>
         <div class="col-1 mt-4">
-          <div class="d-flex flex-column">
+          <div id="socialsLogo" class="d-flex flex-column">
             <img src="../assets/facebook.png" alt="" />
             <img src="../assets/instagram.png" alt="" />
             <img src="../assets/tiktok.png " alt="" />
@@ -91,17 +85,12 @@
     <main>
       <div class="d-flex">
         <form
-          class="w-75 mx-auto my-5"
+          class="w-25 mx-auto my-5 py-2"
           id="form"
-          style="
-            border: 1px solid black;
-            border-radius: 20px;
-            max-width: 400px;
-            background-color: whitesmoke;
-          "
+          style="border-radius: 20px; background-color: whitesmoke"
         >
           <div class="mt-2 text-center">
-            <p>Sign Up</p>
+            <h4>Sign Up</h4>
           </div>
           <div class="form-group text-center my-2">
             <!-- <label for="username"> Username </label> -->
@@ -118,7 +107,7 @@
             <input
               class="form-control w-50 w-md-40 w-lg-50 mx-auto text-center"
               id="password"
-              type="text"
+              type="password"
               placeholder="Password"
               required
             />
@@ -128,33 +117,32 @@
             <input
               class="form-control w-50 w-md-40 w-lg-50 mx-auto text-center"
               id="confirm_pw"
-              type="text"
+              type="password"
               placeholder="Confirm Password"
               required
             />
-          </div>
-          <div class="text-center mb-2">
-            <button class="btn btn-primary w-50 mx-auto" type="submit">
-              Sign Up
-            </button>
           </div>
 
           <fieldset style="padding-left: 25%; margin-bottom: 5px">
             <p class="mb-1">How did you hear about Us ?</p>
             <div class="form-group">
-              <input type="radio" value="Friends" />
-              <label for="Friends">Friends</label>
+              <input id="friends" type="checkbox" value="" />
+              <label for="friends">Friends</label>
             </div>
             <div class="form-group">
-              <input type="radio" value="socialMedia" />
+              <input id="socialMedia" type="checkbox" value="socialMedia" />
               <label for="socialMedia">Social Media</label>
             </div>
             <div class="form-group">
-              <input type="radio" value="News" />
-              <label for="News">News</label>
+              <input id="news" type="checkbox" value="News" />
+              <label for="news">News</label>
             </div>
           </fieldset>
-
+          <div class="text-center mb-2"> 
+            <button class="btn btn-primary w-50 mx-auto" type="submit">
+              Sign Up
+            </button>
+          </div>
           <div class="text-center mb-2">
             <small class="form-text"
               >Already have an account?
@@ -164,7 +152,7 @@
         </form>
       </div>
     </main>
-    <footer>
+    <footer class="mt-5">
       <div
         class="row d-flex justify-content-center"
         style="background-color: #c8e9f2"

@@ -9,6 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../styles/h_fStyles.css" />
 
     <title>Products Page</title>
@@ -19,22 +20,20 @@
         box-sizing: border-box;
       }
       div .card-img {
-        height: 100%;
+        height: 300px;
         width: 100%;
         object-fit: contain;
       }
       .img-container {
-        height: 65%;
+        height: 60%;
       }
-
       .card {
-        height: 90%;
+        height: 500px;
         width: 100%;
       }
 
       .card-text {
-        height: 35%;
-        margin-top: 0px;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -44,13 +43,8 @@
         <div class="col-11">
           <div class="d-flex flex-column text-center">
             <div class="w-50" style="margin-left: 30%">
-              <div class="pt-2">
-                <img
-                  id="logo"
-                  class="img mx-auto"
-                  src="../assets/main_logo.jpg"
-                  alt=""
-                />
+              <div id="logo" class="img-container">
+                <img src="../assets/main_logo.jpg" alt="" />
               </div>
               <h3 class="text m-0" style="font-family: ai; color: #6fd6f3">
                 The Pawesome Place
@@ -65,7 +59,7 @@
           </div>
         </div>
         <div class="col-1 mt-4">
-          <div class="d-flex flex-column">
+          <div id="socialsLogo" class="d-flex flex-column">
             <img src="../assets/facebook.png" alt="" />
             <img src="../assets/instagram.png" alt="" />
             <img src="../assets/tiktok.png " alt="" />
@@ -111,8 +105,8 @@
     <main>
       <div class="grid p-5">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card p-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_food.jpg" alt="" />
               </div>
@@ -122,12 +116,12 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4 ">
-            <div class="card p-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_collar.jpg" alt="" />
               </div>
@@ -137,12 +131,12 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card p-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_toy.jpg" alt="" />
               </div>
@@ -152,14 +146,14 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class=" col-md-4">
-            <div class="card p-3">
+        <div class="row mt-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_cage.jpg" alt="" />
               </div>
@@ -169,11 +163,11 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>
-          <div class=" col-md-4">
+          <div class="col-sm-6 col-md-4 col-lg-4">
             <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_bowl.jpg" alt="" />
@@ -184,14 +178,14 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>
-          <div class=" col-md-4">
-            <div class="card p-3">
+          <div class="col-sm-6 col-md-4 col-lg-4">
+            <div class="card p-2">
               <div class="img-container">
-                <img class="card-img" src="../assets/dog _health.jpg" alt="" />
+                <img class="card-img" src="../assets/dog_health.jpg" alt="" />
               </div>
               <div class="card-text">
                 <h5>Health product</h5>
@@ -199,7 +193,7 @@
                   Lorem ipsum odor amet, consectetuer adipiscing elit. Nulla a
                   molestie elit tempus laoreet.
                 </p>
-                <a class="btn btn-primary" href=""> Add to Cart </a>
+                <a href=checkout.html class="btn btn-primary"> Add to Cart </a>
               </div>
             </div>
           </div>

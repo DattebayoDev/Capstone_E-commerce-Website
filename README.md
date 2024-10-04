@@ -28,6 +28,8 @@ fatal: refusing to merge unrelated histories
 git pull origin <branch-name> --allow-unrelated-histories
 solution is to merge unrelated histories 
 
+why is there space below,  i need my footer to be at the bottom of the page 
+
 ## Useful emmett shorcuts 
 (div.className>label+input)*5
 To create 5 <div> elements, each containing a <label> and an <input>, all with similar class names
