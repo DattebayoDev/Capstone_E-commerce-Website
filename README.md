@@ -66,6 +66,10 @@ use ps intsead of pl-5 for bootstrap 5
 
 My form inputs were overflowing so i did form-control-small ang changed their col width
 
+flex-column and justif-content center interferring with each other 
+
+why is my img-fluid not working for index.html
+
 ## New Information
 
 Cards assume no specific width to start, so they’ll be 100% wide unless otherwise stated. You can change this as needed with custom CSS, grid classes, grid Sass mixins, or utilities.

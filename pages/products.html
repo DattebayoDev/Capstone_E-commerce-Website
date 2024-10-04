@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styles/h_fStyles.css" />
 
     <title>Products Page</title>
     <style>
@@ -19,59 +19,100 @@
         box-sizing: border-box;
       }
       div .card-img {
-        height: 300px;
+        height: 100%;
         width: 100%;
         object-fit: contain;
       }
       .img-container {
-        height: 60%;
+        height: 65%;
       }
+
       .card {
-        height: 500px;
+        height: 90%;
         width: 100%;
       }
 
       .card-text {
-        margin-top: 20px;
+        height: 35%;
+        margin-top: 0px;
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="container w-50">
-        <ul
-          class="nav d-flex"
-          style="background-color: whitesmoke; border: ; border-radius: 10px; justify-content: space-evenly;"
-        >
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="../index.html"> Home </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="../pages/products.html">
-              Products
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="../pages/login.html"> Login </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="../pages/signup.html">
-              Sign Up
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-dark" href="../pages/checkout.html">
-              Cart
-            </a>
-          </li>
-        </ul>
+      <div class="row">
+        <div class="col-11">
+          <div class="d-flex flex-column text-center">
+            <div class="w-50" style="margin-left: 30%">
+              <div class="pt-2">
+                <img
+                  id="logo"
+                  class="img mx-auto"
+                  src="../assets/main_logo.jpg"
+                  alt=""
+                />
+              </div>
+              <h3 class="text m-0" style="font-family: ai; color: #6fd6f3">
+                The Pawesome Place
+              </h3>
+              <p
+                class="text m-1"
+                style="font-family: fonty; font-size: 25px; color: #6fd6f3"
+              >
+                Pet Store
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 mt-4">
+          <div class="d-flex flex-column">
+            <img src="../assets/facebook.png" alt="" />
+            <img src="../assets/instagram.png" alt="" />
+            <img src="../assets/tiktok.png " alt="" />
+            <img src="../assets/twitter.png " alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="row" style="background-color: beige">
+        <div class="col">
+          <div class="container w-75">
+            <ul
+              class="nav d-flex"
+              style="border-radius: 10px; justify-content: space-evenly"
+            >
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../pages/products.html">
+                  Products
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../pages/login.html">
+                  Login
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../pages/signup.html">
+                  Sign Up
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="../pages/checkout.html">
+                  Cart
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <div class="grid p-5">
         <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card p-2">
+          <div class="col-md-4">
+            <div class="card p-3">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_food.jpg" alt="" />
               </div>
@@ -85,8 +126,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card p-2">
+          <div class="col-md-4 ">
+            <div class="card p-3">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_collar.jpg" alt="" />
               </div>
@@ -100,8 +141,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card p-2">
+          <div class="col-md-4">
+            <div class="card p-3">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_toy.jpg" alt="" />
               </div>
@@ -116,9 +157,9 @@
             </div>
           </div>
         </div>
-        <div class="row mt-3">
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card p-2">
+        <div class="row">
+          <div class=" col-md-4">
+            <div class="card p-3">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_cage.jpg" alt="" />
               </div>
@@ -132,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
+          <div class=" col-md-4">
             <div class="card p-2">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog_bowl.jpg" alt="" />
@@ -147,8 +188,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4">
-            <div class="card p-2">
+          <div class=" col-md-4">
+            <div class="card p-3">
               <div class="img-container">
                 <img class="card-img" src="../assets/dog _health.jpg" alt="" />
               </div>
@@ -165,5 +206,26 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div
+        class="row d-flex justify-content-center"
+        style="background-color: #c8e9f2"
+      >
+        <div class="col-3 pt-3">
+          <p>&copy; 2024 Pixelated Paws. All rights reserved.</p>
+          <div class="d-flex">
+            <img src="../assets/facebook1.png" alt="" />
+            <img src="../assets/instagram1.png" alt="" />
+            <img src="../assets/tiktok1.png " alt="" />
+            <img src="../assets/twitter1.png " alt="" />
+          </div>
+        </div>
+        <div class="col-4 py-3">
+          <p dir="rtl">Phone: (123) 456-7890</p>
+          <p dir="rtl">Email: iloveanimals@gmail.com</p>
+          <p dir="rtl">Location: New York City, New York, United States</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
