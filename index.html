@@ -9,12 +9,38 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    
-    <link rel="stylesheet" href="../styles/h_fStyles.css" />
     <title>Home</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
     <style>
+      @font-face {
+        font-family: "fonty"; /* Replace with your desired font name */
+        src: url("../fonts/fonty.txt") format("text");
+      }
+      @font-face {
+        font-family: "ph"; /* Replace with your desired font name */
+        src: url("../fonts/ph1.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "ai"; /* Replace with your desired font name */
+        src: url("../fonts/ai.otf") format("opentype");
+      }
+      body {
+        font-family: arial;
+      }
+
+      header img {
+        height: 20px;
+        width: 20px;
+        margin: 3px;
+      }
       #intro_text {
         font-size: 20px;
+      }
+      #logo {
+        height: 100px;
+        width: 50%;
+        object-fit: cover;
       }
 
       #center_img {
@@ -28,9 +54,17 @@
         color: white;
         font-family: "ph";
       }
+      footer p {
+        color: #404040;
+        font-size: 10px;
+        font-weight: bold;
+        margin: 2px;
+      }
 
-      footer {
-        margin: 0;
+      footer img {
+        height: 15px;
+        width: 15px;
+        margin-right: 3px;
       }
     </style>
   </head>
@@ -39,10 +73,18 @@
     <header>
       <div class="row">
         <div class="col-11">
-          <div class="d-flex flex-column text-center">
-            <div class="w-50" style="margin-left: 30%">
-              <div id="logo" class="img-container">
-                <img src="../assets/main_logo.jpg" alt="" />
+          <div
+            class="d-flex flex-column text-center"
+            style="border: 1px solid black"
+          >
+            <div class="w-50" style="margin-left: 30%; border: 3px solid blue">
+              <div class="pt-2">
+                <img
+                  id="logo"
+                  class="img mx-auto"
+                  src="../assets/main_logo.jpg"
+                  alt=""
+                />
               </div>
               <h3 class="text m-0" style="font-family: ai; color: #6fd6f3">
                 The Pawesome Place
@@ -56,8 +98,8 @@
             </div>
           </div>
         </div>
-        <div class="col-1 mt-4">
-          <div id="socialsLogo" class="d-flex flex-column">
+        <div class="col-1">
+          <div class="d-flex flex-column">
             <img src="../assets/facebook.png" alt="" />
             <img src="../assets/instagram.png" alt="" />
             <img src="../assets/tiktok.png " alt="" />
@@ -106,7 +148,7 @@
           class="row d-flex justify-content-center"
           style="background-color: #c8e9f2"
         >
-          <div class="col-4">
+          <div class="col-4" style="border: 1px solid black">
             <img
               id="center_img"
               class="img-fluid"
@@ -114,7 +156,7 @@
               alt=""
             />
           </div>
-          <div id="short-text" class="col-4">
+          <div id="short-text" class="col-4" style="border: 1px solid black">
             <p>Caring for</p>
             <p>Your Furry</p>
             <p>Little Friends</p>
@@ -122,11 +164,15 @@
         </div>
         <div class="row" style="background-color: whitesmoke">
           <div class="col-6 mx-auto">
-            <div>
+            <div style="border: 3px solid blue">
               <h4 id="intro" class="text-center mt-4">
                 We have everything your pet needs
               </h4>
-              <p id="intro_text" class="text-center p-2">
+              <p
+                id="intro_text"
+                class="text-center p-2"
+                style="border: 1px solid black"
+              >
                 Welcome to our furry little paradise! We’re a one-stop shop for
                 all your pet’s needs, from toys and treats to cozy beds and
                 stylish accessories. Our friendly staff is always on hand to
@@ -138,28 +184,28 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-3 p-0">
+          <div class="col-3 p-0" style="border: 1px solid black">
             <img class="img-fluid" src="./assets/collage.jpg" alt="" />
           </div>
-          <div class="col-3 p-0">
+          <div class="col-3 p-0" style="border: 1px solid black">
             <img class="img-fluid" src="./assets/collage1.jpg" alt="" />
           </div>
-          <div class="col-3 p-0">
+          <div class="col-3 p-0" style="border: 1px solid black">
             <img class="img-fluid" src="./assets/collage.jpg" alt="" />
           </div>
-          <div class="col-3 p-0">
+          <div class="col-3 p-0" style="border: 1px solid black">
             <img class="img-fluid" src="./assets/collage1.jpg" alt="" />
           </div>
         </div>
       </div>
     </main>
-    <footer class="mt-0">
+    <footer>
       <div
         class="row d-flex justify-content-center"
         style="background-color: #c8e9f2"
       >
-        <div class="col-3 pt-3">
-          <p>&copy; 2024 The Pawesome Place. All rights reserved.</p>
+        <div class="col-3 pt-3" style="border: 1px solid black">
+          <p>&copy; 2024 Pixelated Paws. All rights reserved.</p>
           <div class="d-flex">
             <img src="../assets/facebook1.png" alt="" />
             <img src="../assets/instagram1.png" alt="" />
@@ -167,10 +213,10 @@
             <img src="../assets/twitter1.png " alt="" />
           </div>
         </div>
-        <div class="col-4 py-3">
-          <p dir="rtl"> 456-7890-(123) </p>
-          <p dir="rtl">iloveanimals@gmail.com</p>
-          <p dir="rtl">New York City, New York, United States</p>
+        <div class="col-4 py-3" style="border: 1px solid black">
+          <p dir="rtl">Phone: (123) 456-7890</p>
+          <p dir="rtl">Email: iloveanimals@gmail.com</p>
+          <p dir="rtl">Location: New York City, New York, United States</p>
         </div>
       </div>
     </footer>

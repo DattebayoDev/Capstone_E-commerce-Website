@@ -1,0 +1,68 @@
+<!-- Example of improved header structure -->
+<header class="site-header">
+    <div class="container">
+      <!-- Logo and Brand Section -->
+      <div class="brand-section">
+        <div class="logo-container">
+          <img src="../assets/main_logo.jpg" alt="The Pawesome Place Logo" />
+        </div>
+        <h1 class="brand-name">The Pawesome Place</h1>
+        <p class="brand-tagline">Pet Store</p>
+      </div>
+      
+      <!-- Social Media Links -->
+      <nav class="social-nav">
+        <a href="#" aria-label="Facebook"><img src="../assets/facebook.png" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="../assets/instagram.png" alt="Instagram" /></a>
+        <a href="#" aria-label="TikTok"><img src="../assets/tiktok.png" alt="TikTok" /></a>
+        <a href="#" aria-label="Twitter"><img src="../assets/twitter.png" alt="Twitter" /></a>
+      </nav>
+      
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/products.html">Products</a></li>
+          <li><a href="../pages/login.html">Login</a></li>
+          <li><a href="../pages/signup.html">Sign Up</a></li>
+          <li><a href="../pages/checkout.html">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  /* Accompanying CSS */
+  :root {
+    --primary-color: #6fd6f3;
+    --secondary-color: beige;
+    --text-dark: #333;
+  }
+  
+  .site-header {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .brand-section {
+    text-align: center;
+  }
+  
+  .brand-name {
+    color: var(--primary-color);
+    margin: 0;
+    font-family: ai;
+  }
+  
+  .brand-tagline {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-family: fonty;
+  }
+  
+  .nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 10px;
+    list-style: none;
+  }
